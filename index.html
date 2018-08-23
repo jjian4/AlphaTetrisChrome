@@ -1,1 +1,90 @@
-Testing
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alpha Tetris</title>
+	<style>
+		body {
+			color: white;
+			font-family: sans-serif;
+			font-size: 1em;
+			text-align: center;
+			line-height: 21px;
+
+			background-repeat: no-repeat;
+			background-image: url('background.jpg');
+			background-position: center center;
+			background-size: cover;
+
+		}
+
+		#title {
+			color: black;
+			font-family: impact;
+			letter-spacing: 10px;
+			font-size: 1.7em;
+			padding-top: 12px;
+			font-style: italic;
+		}
+
+		a {
+			color: black;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: red;
+		}
+
+		#name a {
+			font-size: 0.8em;
+		}
+
+		canvas {
+			height: 77vh;
+		}
+
+		#score, #rows {
+			font-size:1.4em;
+		}
+
+	</style>
+</head>
+<body>
+	<div id = "title">
+		<a href = "https://github.com/jjian4/AlphaTetris" target="_blank">ALPHA TETRIS</a>
+	</div>
+
+	<div id = "name">
+		<a href = "https://github.com/jjian4" target="_blank">James Jiang</a>
+	</div>
+
+	<audio id = "soundtrack" loop>
+	 	<source src="track.mp3" type="audio/mpeg">
+	 	Your browser does not support the audio element.
+	</audio>
+
+	<div id = "letters">
+		<br>
+		<select id = "canvasSize">
+			<option value = "null"> Select Canvas Size: </option>
+			<option value = "small"> Small </option>
+			<option value = "medium" selected> Medium </option>
+			<option value = "large"> Large </option>
+		</select>
+		<br>
+		<br>
+		Type something!
+		<br>
+		<input type="text" autofocus="autofocus" id="userInput"></input>
+		<br>
+		<br>
+	</div>
+
+
+	<canvas id="tetris"></canvas>
+	<div id = "highScore"></div>
+	<div id = "rows"></div>
+	<div id = "score"></div>
+	<script src = "tetris.js"> </script>
+</body>
+</html>
