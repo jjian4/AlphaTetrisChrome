@@ -636,3 +636,7 @@ function startGame() {
 	//Game loop
 	update();
 }
+
+
+
+
