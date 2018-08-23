@@ -11,6 +11,7 @@
 		}
 	],
 	"browser_action": {
+		"default_icon": "alpha_tetris_letter.png",
 		"default_popup": "game/index.html",
 		"default_title": "Open a chrome extension popup to play Alpha Tetris!"
 	}
