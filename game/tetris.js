@@ -25,6 +25,10 @@ function submitted(){
     //Set canvas size according to selection
     setCanvasSize();
 
+    //Chrome extension removes game title and name
+    document.getElementById("title").remove();
+    document.getElementById("name").remove();
+
 	//replace inquiry section with user's input
     document.getElementById("letters").innerHTML = userInput;
     document.getElementById("letters").style["letter-spacing"] = "6px";
