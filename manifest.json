@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Alpha Tetris",
+	"version": "1.0",
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": ["content.js"]
+		}
+	],
+	"browser_action": {
+		"default_popup": "game/index.html",
+		"default_title": "Open a chrome extension popup to play Alpha Tetris!"
+	}
+}
